@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Chat</title>
+    <script src="http://localhost:4000/socket.io/socket.io.js"></script>
+    <script src="jquery-1.11.0.js"></script>
+    <script src="client/client.js"></script>
+</head>
+<body>
+    <div>
+        Nowa wiadomość: <input id="message" type="text">
+        <button id="send">Wyślij</button><br/>
+        <div id="messages"></div>
+    </div>
+    <script>
+        $(function() {
+            var message = $('#message'),
+                messages = $('#messages');
+            function messageHandler(message) {
+                $('<p>' + message.from + ': ' + message.text + '</p>').appendTo(messages);
+            }
+            function disconnectHandler(userName) {
+                $('<p>Użytkownik ' + userName + ' się rozłączył</p>').appendTo(messages);
+            }
+            function sendMessage() {
+                CHAT.send(message.val());
+                message.val('');
+            }
+            function badCredentialsHandler() {
+                console.log('Bad credentials');
+            }
+            function newUserHandler(userName) {
+                $('<p>Użytkownik ' + userName +'</p>').appendTo(messages);
+            }
+            CHAT.addMessageListener(messageHandler);
+            CHAT.addDisconnectHandler(disconnectHandler);
+            CHAT.addBadCredentialsHandler(badCredentialsHandler);
+            CHAT.addNewUserHandler(newUserHandler);
+            var userName = prompt('Login');
+            CHAT.login(userName, '123');
+            $('#send').on('click', sendMessage);
+        })
+    </script>
+</body>
+</html>

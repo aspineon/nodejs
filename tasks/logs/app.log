@@ -1,0 +1,15 @@
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Nov/2017:04:42:24 +0000] \"GET / HTTP/1.1\" 200 22\n","timestamp":"2017-11-24T04:42:24.651Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Nov/2017:04:42:56 +0000] \"GET / HTTP/1.1\" 200 22\n","timestamp":"2017-11-24T04:42:56.186Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Nov/2017:04:42:56 +0000] \"GET /tasks HTTP/1.1\" 200 400\n","timestamp":"2017-11-24T04:42:56.330Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Nov/2017:04:42:56 +0000] \"POST /tasks HTTP/1.1\" 200 171\n","timestamp":"2017-11-24T04:42:56.432Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Nov/2017:04:42:56 +0000] \"GET /tasks/1 HTTP/1.1\" 200 165\n","timestamp":"2017-11-24T04:42:56.533Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Nov/2017:04:42:56 +0000] \"GET /tasks/0 HTTP/1.1\" 404 9\n","timestamp":"2017-11-24T04:42:56.629Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Nov/2017:04:42:56 +0000] \"PUT /tasks/1 HTTP/1.1\" 204 -\n","timestamp":"2017-11-24T04:42:56.733Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Nov/2017:04:42:56 +0000] \"DELETE /tasks/1 HTTP/1.1\" 204 -\n","timestamp":"2017-11-24T04:42:56.838Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Nov/2017:04:42:56 +0000] \"POST /token HTTP/1.1\" 200 111\n","timestamp":"2017-11-24T04:42:56.990Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Nov/2017:04:42:57 +0000] \"POST /token HTTP/1.1\" 401 12\n","timestamp":"2017-11-24T04:42:57.136Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Nov/2017:04:42:57 +0000] \"POST /token HTTP/1.1\" 401 12\n","timestamp":"2017-11-24T04:42:57.222Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Nov/2017:04:42:57 +0000] \"POST /token HTTP/1.1\" 401 12\n","timestamp":"2017-11-24T04:42:57.225Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Nov/2017:04:42:57 +0000] \"GET /user HTTP/1.1\" 200 67\n","timestamp":"2017-11-24T04:42:57.373Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Nov/2017:04:42:57 +0000] \"DELETE /user HTTP/1.1\" 204 -\n","timestamp":"2017-11-24T04:42:57.457Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Nov/2017:04:42:57 +0000] \"POST /users HTTP/1.1\" 200 237\n","timestamp":"2017-11-24T04:42:57.606Z"}
