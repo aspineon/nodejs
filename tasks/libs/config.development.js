@@ -1,6 +1,6 @@
 import logger from './logger.js';
 
-module.exports = {
+module.export = {
     database: 'tasks',
     username: '',
     password: '',

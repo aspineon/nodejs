@@ -1,7 +1,7 @@
 import passport from 'passport';
 import {Strategy, ExtractJwt} from 'passport-jwt';
 
-module.exports = APP => {
+module.export = APP => {
     const Users = APP.db.models.Users;
     const cfg = APP.libs.config;
     const  params = {

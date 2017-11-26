@@ -1,4 +1,4 @@
-module.exports = APP => {
+module.export = APP => {
     const Tasks = APP.db.models.Tasks;
     APP.route('/tasks')
         .all(APP.auth.authenticate())

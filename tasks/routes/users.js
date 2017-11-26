@@ -1,4 +1,4 @@
-module.exports = APP => {
+module.export = APP => {
     const Users = APP.db.models.Users;
     APP.route("/user")
         .all(APP.auth.authenticate())

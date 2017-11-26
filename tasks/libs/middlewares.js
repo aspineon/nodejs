@@ -6,7 +6,7 @@ import logger from './logger.js';
 import compression from 'compression';
 import helmet from 'helmet';
 
-module.exports = APP => {
+module.export = APP => {
     APP.set('json spaces', 4);
     APP.set('port', 3000);
     APP.use(helmet());

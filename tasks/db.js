@@ -4,7 +4,7 @@ import Sequelize from 'sequelize';
 
 let db = null;
 
-module.exports = APP => {
+module.export = APP => {
     if (!db) {
         const config = APP.libs.config;
         const sequelize = new Sequelize(config.database, config.username, config.password, config.params);

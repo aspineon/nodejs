@@ -1,4 +1,4 @@
-module.exports = APP => {
+module.export = APP => {
     /**
      *
      * @api {get} / API Status

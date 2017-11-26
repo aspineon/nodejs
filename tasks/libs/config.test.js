@@ -1,4 +1,4 @@
-module.exports = {
+module.export = {
     database: 'tasks',
     username: '',
     password: '',
