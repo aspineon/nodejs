@@ -14,6 +14,7 @@
     user.printInfo();
     delete user.printInfo;
 
+
     function Account(number) {
         var balanceInfo = 'Balance: ';
 
@@ -27,13 +28,12 @@
             console.log(balanceInfo + this.balance);
         };
 
-        this.firstName = 'sdfsdfd';
 
         return this;
     }
 
     Account.prototype.deposit = function (funds) {
-        this.balance = funds;
+        this.balance += funds;
     };
 
     var account1 = new Account('00000000000000000000000001');

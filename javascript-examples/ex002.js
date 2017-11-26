@@ -28,5 +28,5 @@
         console.log(number);
     }
 
-    print(filter(numbers, isEven));
+    forEach(filter(numbers, isEven), print);
 })();

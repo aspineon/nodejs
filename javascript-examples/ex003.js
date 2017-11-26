@@ -17,7 +17,6 @@
     var test2 = test(0);
     test2();
     test2();
-
     test1();
 
     // immediately invoked function expression

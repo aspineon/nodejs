@@ -1,3 +1,4 @@
+{ "users":
 [
   {
     "id": 1,
@@ -699,4 +700,4 @@
     "email": "Maia.Fritsch@yahoo.com",
     "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/lebinoclard/128.jpg"
   }
-]
+]}
